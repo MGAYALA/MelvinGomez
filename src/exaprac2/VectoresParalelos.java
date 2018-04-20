@@ -14,21 +14,7 @@ import javax.swing.JOptionPane;
 public class VectoresParalelos {
     
 public static void main(String[] args) {
-   /* Scanner sn = new Scanner(System.in);
-       boolean salir = false;
-       int opcion; //Guardaremos la opcion del usuario
-        
-       while(!salir){
-            
-           System.out.println("1. Opcion 1");
-           System.out.println("2. Opcion 2");
-           System.out.println("3. Opcion 3");
-           System.out.println("4. Salir");
-            
-           System.out.println("Escribe una de las opciones");
-           opcion = sn.nextInt();
-            
-       }*/
+  
     int numEm =Integer.parseInt(JOptionPane.showInputDialog
         ("ingrese el numero de empleados "));
         
@@ -39,6 +25,7 @@ public static void main(String[] args) {
        double Sueldo[] = new double[numEm];
         
        double au = 0;
+       
        
        for(int i = 0 ; i < numEm ; i++){
            //Pidiendo el nommbre
@@ -51,9 +38,11 @@ public static void main(String[] args) {
                     + "Sueldo por hora "+ i));
            
            
-           double afp,isss,renta,desc;
+           
            
             if(Sueldo[i] < 650){
+                
+                double afp,isss,renta,desc;
                 
                 renta=Sueldo[i]*0.10;
                 isss=Sueldo[i]*0.07;
