@@ -40,7 +40,7 @@ public static void main(String[] args) {
            
            
            
-            if(Sueldo[i] < 650){
+            if(Sueldo[i] < 600){
                 
                 double afp,isss,renta,desc;
                 
